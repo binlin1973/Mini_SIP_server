@@ -19,8 +19,10 @@ worker_thread_t worker_threads[MAX_THREADS];
 void setup_server_socket(int *server_socket, struct sockaddr_in *server_addr);
 void handle_new_message(int server_socket);
 
+int server_socket;
+
 int main() {
-    int server_socket;
+    
     struct sockaddr_in server_addr;
 
     // Setup server socket

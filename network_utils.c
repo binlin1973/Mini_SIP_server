@@ -11,6 +11,8 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
+extern int server_socket;
+
 /**
  * @brief Sends a SIP message to the specified destination and port.
  * 
@@ -48,7 +50,7 @@ void send_sip_message(const sip_message_t *message, const char *destination, int
     inet_ntop(AF_INET, &(local_addr.sin_addr), source_ip_str, INET_ADDRSTRLEN);
 
     // Send the message
-    if (sendto(sockfd, message->buffer, strlen(message->buffer), 0,
+    if (sendto(server_socket, message->buffer, strlen(message->buffer), 0,
                (struct sockaddr *)&dest_addr, sizeof(dest_addr)) < 0) {
         perror("Send failed");
     } else {
