@@ -13,10 +13,6 @@
 #include "network_utils.h"
 
 
-// The SIP server uses SIP_SERVER_IP_ADDRESS to generate its Via: and Contact: headers.
-// *MUST* be set to your SIP server's interface address before compiling.
-#define SIP_SERVER_IP_ADDRESS "192.168.192.128"
-
 // Each entry represents a softphone/UE with its corresponding phone number, IP address, and SIP port,
 // so that they can be correctly reached as the called party by the SIP server.
 // *MUST* be set before compiling.

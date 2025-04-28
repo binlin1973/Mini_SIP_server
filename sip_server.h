@@ -11,6 +11,10 @@
 #include <stdbool.h>
 #include <arpa/inet.h>
 
+// The SIP server uses SIP_SERVER_IP_ADDRESS to generate its Via: and Contact: headers.
+// *MUST* be set to your SIP server's interface address before compiling.
+#define SIP_SERVER_IP_ADDRESS "192.168.192.128"
+
 #define BUFFER_SIZE 1400
 #define MAX_THREADS 5
 #define QUEUE_CAPACITY 10
