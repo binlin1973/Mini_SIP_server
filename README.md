@@ -9,7 +9,7 @@ Before building, open `sip_server.c` and set `SIP_SERVER_IP_ADDRESS` to your ser
 
 ### NOTE 2: SIP Numbers Available for Registration
 
-The array below lists the only SIP phone numbers that can register. To add or change users, simply edit the username entries (e.g., “1001”–“1008”). Do not touch the default ip_str and port values — these will be automatically overwritten with each phone’s actual IP and port upon REGISTER.
+The array below lists the only SIP phone numbers that can register. To add or change users, open sip_server.c and simply edit the username entries (e.g., “1001”–“1008”). Do not touch the default ip_str and port values — these will be automatically overwritten with each phone’s actual IP and port upon REGISTER.
 
 
 location_entry_t location_entries[] = {
