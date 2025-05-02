@@ -34,6 +34,6 @@ location_entry_t location_entries[] = {
 
 For a deeper dive into the state machine and full usage instructions, see:
 
-`State Machine Design.pdf`
+`State_Machine_Design.pdf`
 
 `SIP_Server_Usage_Instructions.pdf`
