@@ -13,6 +13,7 @@ The array below lists the only SIP phone numbers that can register. To add or ch
 
 
 location_entry_t location_entries[] = {
+
     {"1001","defaultpassword", "192.168.192.1", 5060, SIP_SERVER_IP_ADDRESS, false},
     
     {"1002","defaultpassword",  "192.168.192.1", 5070, SIP_SERVER_IP_ADDRESS, false},
