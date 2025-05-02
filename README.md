@@ -7,7 +7,7 @@ Before building, open `sip_server.c` and set `SIP_SERVER_IP_ADDRESS` to your ser
 #define SIP_SERVER_IP_ADDRESS "192.168.184.128"
 
 
-NOTE 2: Registered SIP Phones
+### NOTE 2: Registered SIP Phones
 
 The array below lists the only SIP phone numbers that can register. To add or change users, simply edit the username entries (e.g., “1001”–“1008”). Do not touch the default ip_str and port values — these will be automatically overwritten with each phone’s actual IP and port upon REGISTER.
 
