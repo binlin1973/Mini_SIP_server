@@ -12,14 +12,23 @@ Before building, open `sip_server.c` and set `SIP_SERVER_IP_ADDRESS` to your ser
 The array below lists the only SIP phone numbers that can register. To add or change users, simply edit the username entries (e.g., “1001”–“1008”). Do not touch the default ip_str and port values — these will be automatically overwritten with each phone’s actual IP and port upon REGISTER.
 
 location_entry_t location_entries[] = {
+
     {"1001","defaultpassword", "192.168.192.1", 5060, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1002","defaultpassword",  "192.168.192.1", 5070, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1003","defaultpassword",  "192.168.1.103", 5060, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1004","defaultpassword",  "192.168.1.104", 5060, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1005","defaultpassword",  "192.168.184.1", 5060, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1006","defaultpassword",  "192.168.184.1", 5070, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1007","defaultpassword",  "192.168.1.4", 5060, SIP_SERVER_IP_ADDRESS, false},
+    
     {"1008","defaultpassword",  "192.168.1.4", 5070, SIP_SERVER_IP_ADDRESS, false},
+    
 };
 
 
