@@ -13,6 +13,9 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <sys/select.h>
+#include <sys/time.h>
+
 
 worker_thread_t worker_threads[MAX_THREADS];
 

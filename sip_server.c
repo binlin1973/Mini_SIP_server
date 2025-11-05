@@ -395,6 +395,7 @@ int handle_register(sip_message_t *message) {
  * @param leg_type The leg type where the call_id was found. Indicates which leg (a or b) the SIP message was received from.
  */
 void handle_state_machine(call_t *call, int message_type, const char *method_or_code, bool has_sdp, sip_message_t *message, const char *raw_sip_message, int leg_type) {
+    (void)raw_sip_message;
     char *from_start = strstr(message->buffer, "From: ");
     char *via_start = strstr(message->buffer, "Via: ");
     char *cseq_start = strstr(message->buffer, "CSeq: ");
@@ -605,8 +606,11 @@ void handle_state_machine(call_t *call, int message_type, const char *method_or_
                         size_t username_len = username_end - username_start;
                          
                         char *at_pos = strchr(username_start, '@');
-                        if (at_pos != NULL && (at_pos - username_start) < username_len) {
-                              username_len = at_pos - username_start;
+                        if (at_pos != NULL) {
+                              size_t at_offset = (size_t)(at_pos - username_start);
+                              if (at_offset < username_len) {
+                                      username_len = at_offset;
+                              }
                         }
                          
                         strncpy(callee_uri, username_start, username_len);

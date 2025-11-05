@@ -1,32 +1,42 @@
-# Prerequisites
-*.d
+# === Build artifacts ===
+/build/
 
-# Compiled Object files
+# Legacy object or dep files in root (if makefile changed back)
+/*.o
+/*.d
+/*.so
+/*.a
+/*.out
+/*.exe
+/*.app
+
+# === General compiled artifacts ===
+*.d
 *.slo
 *.lo
 *.o
 *.obj
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
 *.mod
 *.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
-# Executables
 *.exe
 *.out
 *.app
+
+# === IDE & Editor junk ===
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+.cache/
+core
+vgcore.*
