@@ -1,3 +1,5 @@
+[![CI](https://github.com/binlin1973/Mini_SIP_server/actions/workflows/ci.yml/badge.svg)](https://github.com/binlin1973/Mini_SIP_server/actions/workflows/ci.yml)
+
 # Mini_SIP_server (C)
 A lightweight SIP server written in C, implementing the full SIP call flow—from the initial `INVITE` through interim states to the final `200 OK` response for `BYE`. Focuses solely on call setup and teardown.
 
