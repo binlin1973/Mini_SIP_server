@@ -85,7 +85,7 @@ For a deeper understanding of how SIP states transition through the call lifecyc
 see State_Machine_Design.pdf
 
 ##  🧪 run tests
-cargo test --all
+make distclean && make && make test
 
 ## License
 MIT License © Bin Lin
