@@ -26,8 +26,7 @@ storing registration and call state entirely in memory — no database or extern
 Before building, open [`sip_server.h`](./sip_server.h)  
 and set your actual host IP address for `SIP_SERVER_IP_ADDRESS`:
 
-```c
-#define SIP_SERVER_IP_ADDRESS "192.168.184.128"  // Example — replace with your machine's IP
+#define SIP_SERVER_IP_ADDRESS "192.168.32.131"  // Example — replace with your machine's IP
 
 ### 2. Build
 
