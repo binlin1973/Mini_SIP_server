@@ -45,7 +45,7 @@ Any standard SIP softphone can register to this server.
 ### Setting	Example	Description
 | Setting                | Example              | Description                 |
 | ---------------------- | -------------------- | --------------------------- |
-| **SIP Server / Proxy** | `192.168.184.128`    | Replace with your server IP |
+| **SIP Server / Proxy** | `192.168.32.131`    | Replace with your server IP |
 | **Port**               | `5060`               | Default UDP port            |
 | **Username**           | `1001` – `1006`      | Any user ID in this range   |
 | **Password**           | any non-empty string | Password is not validated   |
@@ -56,9 +56,9 @@ Any standard SIP softphone can register to this server.
 | Field        | Value           |
 | ------------ | --------------- |
 | Account name | 1001            |
-| SIP server   | 192.168.184.128 |
+| SIP server   | 192.168.32.131 |
 | User         | 1001            |
-| Domain       | 192.168.184.128 |
+| Domain       | 192.168.32.131 |
 | Password     | 1234            |
 | Transport    | UDP             |
 
