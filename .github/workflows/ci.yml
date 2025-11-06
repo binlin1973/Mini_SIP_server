@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      - name: Show toolchain
+        run: |
+          gcc --version
+          make --version
+
+      - name: Build
+        run: make distclean && make
+
+      - name: Run tests
+        run: make test
+
+      - name: Upload test binaries (optional)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-binaries
+          path: build/tests/**
